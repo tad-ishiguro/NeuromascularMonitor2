@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings">
+        <Preference
+            android:key="BackButtonKey"
+            android:widgetLayout="@layout/back_button"
+            />
+
+        <EditTextPreference
+            android:defaultValue="1"
+            android:key="Heart_Amp_Mag_key"
+            android:summary="@string/Hart_Amp_Mag"
+            android:title="@string/Hart_Amp_Mag"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="2"
+            android:key="Respiratory_Amp_Mag_key"
+            android:summary="@string/Respiratory_Amp_Mag"
+            android:title="@string/Respiratory_Amp_Mag"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="3"
+            android:key="TOF1_Amp_Mag_key"
+            android:summary="@string/TOF1_Amp_Mag"
+            android:title="@string/TOF1_Amp_Mag"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/h_CalcGraphAve"
+            android:entries="@array/CalcGraphAve"
+            android:entryValues="@array/CalcGraphAve_values"
+            android:key="calc_graph_ave_key"
+            android:summary="@string/h_CalcGraphAve"
+            android:title="@string/h_CalcGraphAve" />
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:key="average_time_key"
+            android:summary="@string/h_average_time"
+            android:title="@string/h_average_time"
+            android:inputType="number"
+            android:maxLength="2"   />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="absolute_time_flg_key"
+            android:title="@string/absolute_time_flg" />
+
+        <CheckBoxPreference
+            android:defaultValue="0"
+            android:key="ch1_raw_graph_check_key"
+            android:title="@string/ch1_raw_graph_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="0"
+            android:key="ch2_raw_graph_check_key"
+            android:title="@string/ch2_raw_graph_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="hr_check_key"
+            android:title="@string/hr_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="rr_check_key"
+            android:title="@string/rr_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="T1_check_key"
+            android:title="@string/T1_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="0"
+            android:key="T1_ratio_check_key"
+            android:title="@string/T1_ratio_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="T4_check_key"
+            android:title="@string/T4_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="TOF_check_key"
+            android:title="@string/TOF_check" />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="PTC_check_key"
+            android:title="@string/PTC_check" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

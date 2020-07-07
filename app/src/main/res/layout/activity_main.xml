@@ -1,0 +1,399 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:keepScreenOn="true"
+	tools:context=".MainActivity" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="80dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="visible">
+
+			<Button
+				android:id="@+id/start_btn"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text=""
+				android:background="@drawable/play_circle"  />
+		</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="270dp"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:visibility="visible">
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="40dp">
+
+					<TextView
+						android:id="@+id/SimMode"
+						android:layout_width="match_parent"
+						android:layout_height="40dp"
+						android:background="#FF9800"
+						android:gravity="center"
+						android:text="Neuromuscular Sim Mode"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:textSize="18sp" />
+
+
+					<TextView
+					android:id="@+id/Logo"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:background="#a0ffa0"
+					android:gravity="center"
+					android:text="ADTEX Neuromuscular Monitor"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:textSize="18sp" />
+
+				</FrameLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="horizontal"
+					android:visibility="visible">
+
+						<Button
+							android:id="@+id/file_save_btn"
+							android:layout_width="0dip"
+							android:layout_weight="1"
+							android:layout_height="match_parent"
+							android:layout_gravity="center"
+							android:background="@drawable/back_green"
+							android:text="Save Data"
+							android:textAllCaps="false"
+							android:textSize="16sp">
+
+						</Button>
+
+						<Button
+							android:id="@+id/file_open_btn"
+							android:layout_width="0dip"
+							android:layout_weight="1"
+							android:layout_height="match_parent"
+							android:layout_gravity="center"
+							android:background="@drawable/back_green"
+							android:text="Read Data"
+							android:textAllCaps="false"
+							android:textSize="16sp">
+
+						</Button>
+
+						<Button
+							android:id="@+id/recalc_btn"
+							android:layout_width="0dip"
+							android:layout_weight="1"
+							android:layout_height="match_parent"
+							android:layout_gravity="center"
+							android:background="@drawable/back_green"
+							android:text="Re Calc"
+							android:textAllCaps="false"
+            			    android:textSize="16sp">
+
+						</Button>
+
+				</LinearLayout>
+			</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/batteryLevel"
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:background="@drawable/button_white"
+				android:gravity="center"
+				android:text=""
+				android:textColor="#000000"
+				android:textSize="12sp">
+
+			</TextView>
+
+			<Button
+				android:id="@+id/setting_btn"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:background="@drawable/more_black" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/displayCurrent"
+				android:layout_width="0dip"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				android:background="@drawable/back_black"
+				android:gravity="center"
+				android:text=""
+				android:textColor="#ffa0ff"
+				android:textSize="40sp" />
+
+
+			<Button
+				android:id="@+id/cal_btn"
+				android:layout_width="90dip"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:background="@drawable/button_pink"
+				android:text="CAL"
+				android:textAllCaps="false"
+				android:textSize="30sp">
+
+			</Button>
+
+			<Button
+				android:id="@+id/current_up_btn"
+				android:layout_width="45dip"
+				android:layout_height="match_parent"
+				android:background="@drawable/arrow_upward"
+				android:textSize="40sp">
+
+			</Button>
+
+			<Button
+				android:id="@+id/current_down_btn"
+				android:layout_width="45dip"
+				android:layout_height="match_parent"
+				android:textSize="40sp"
+				android:background="@drawable/arrow_downward">
+			</Button>
+
+
+			<Button
+				android:id="@+id/stop_btn"
+				android:layout_width="90dip"
+				android:layout_height="match_parent"
+				android:background="@drawable/button_white"
+				android:layout_gravity="center"
+				android:text="Stop"
+				android:textAllCaps="false"
+				android:textSize="30sp">
+
+			</Button>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="160dp"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="0dip"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<Space android:layout_width="match_parent"
+					android:layout_height="30dp"/>
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="40dp">
+
+				<TextView
+					android:id="@+id/displayTitleTOF"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/back_black"
+					android:gravity="bottom|left"
+					android:text=" TOF"
+					android:textColor="#a0ffff"
+					android:textSize="30sp"
+					/>
+
+					<TextView
+						android:id="@+id/displayTitlePTC"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/back_black"
+						android:gravity="bottom|left"
+						android:text=" PTC"
+						android:textColor="#ffffa0"
+						android:textSize="30sp"
+						/>
+					<TextView
+						android:id="@+id/displayTitleT4"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/back_black"
+						android:gravity="bottom|left"
+						android:text=" T4/T1 %"
+						android:textColor="#a0ffff"
+						android:textSize="30sp"
+						/>
+
+				</FrameLayout>
+
+				<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="120dp">
+
+					<TextView
+						android:id="@+id/displayTOF"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/back_black"
+						android:gravity="top|center"
+						android:text=""
+						android:textColor="#a0ffff"
+						android:textSize="60sp"
+						/>
+
+
+					<TextView
+						android:id="@+id/displayPTC"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/back_black"
+						android:gravity="top|center"
+						android:text=""
+						android:textColor="#ffffa0"
+						android:textSize="60sp"
+						/>
+
+				<TextView
+					android:id="@+id/displayTOFP"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/back_black"
+					android:gravity="top|center"
+					android:text=""
+					android:textColor="#a0ffff"
+					android:textSize="60sp"
+					/>
+
+			</FrameLayout>
+				</LinearLayout>
+			<LinearLayout
+				android:layout_width="270dp"
+				android:layout_height="160dp"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="80dp"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/TOF_btn"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+						android:background="@drawable/button_blue"
+						android:text="TOF"
+						android:textAllCaps="false"
+						android:textSize="30sp">
+
+					</Button>
+
+					<Button
+						android:id="@+id/PTC_btn"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="match_parent"
+						android:background="@drawable/button_yellow"
+						android:layout_gravity="center"
+						android:text="PTC"
+						android:textAllCaps="false"
+						android:textSize="30sp">
+
+					</Button>
+
+					<Button
+						android:id="@+id/AUTO_btn"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="match_parent"
+						android:background="@drawable/button_green"
+						android:layout_gravity="center"
+						android:text="Auto"
+						android:textAllCaps="false"
+						android:textSize="30sp">
+
+					</Button>
+
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="80dp"
+					android:orientation="horizontal">
+
+					<Button
+						android:id="@+id/Twitch_btn"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="match_parent"
+						android:background="@drawable/button_white"
+						android:layout_gravity="center"
+						android:text="1Hz"
+						android:textAllCaps="false"
+						android:textSize="30sp">
+
+					</Button>
+
+					<Button
+						android:id="@+id/TET_btn"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="match_parent"
+						android:background="@drawable/button_white"
+						android:layout_gravity="center"
+						android:text="TET"
+						android:textAllCaps="false"
+						android:textSize="30sp">
+
+					</Button>
+
+
+					<Button
+						android:id="@+id/DBS_btn"
+						android:layout_width="0dip"
+						android:layout_weight="1"
+						android:layout_height="match_parent"
+						android:background="@drawable/button_white"
+						android:layout_gravity="center"
+						android:text="DBS"
+						android:textAllCaps="false"
+						android:textSize="30sp">
+
+					</Button>
+
+				</LinearLayout>
+
+			</LinearLayout>
+		</LinearLayout>
+
+						<SurfaceView
+							android:id="@+id/surfaceView1"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							/>
+
+		</LinearLayout>

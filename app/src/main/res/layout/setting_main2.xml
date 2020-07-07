@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:keepScreenOn="true">
+
+        <Button
+            android:id="@+id/BackButton2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/button_green"
+            android:layout_gravity="center"
+            android:text="ADTEX Neuromuscular Monitor
+            Settings"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:onClick="onBackButtonClick">
+        </Button>
+
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gain_up_btn2"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_pink"
+                android:baselineAligned="false"
+                android:text="Gain +"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/gain_down_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_pink"
+                android:text="Gain -"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/PulseSettingBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_yellow"
+                android:baselineAligned="false"
+                android:text="Stim Pulse Setting"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/GraphSettingBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_yellow"
+                android:text="Chart Setting"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="20sp">
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CurrentValueCorrectionBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_yellow"
+                android:baselineAligned="false"
+                android:text="Neuro Sim Setting"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/BLESettingBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_yellow"
+                android:text="Mesurement Setting"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="20sp">
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/FilterSettingBtn2"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_yellow"
+                android:baselineAligned="false"
+                android:text="Digital Filter Setting"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/PulseRateSettingBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_yellow"
+                android:text="Pulse/Resp Setting"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="20sp">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/FontSettingBtn2"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_yellow"
+                android:baselineAligned="false"
+                android:text="Font Setting"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/StdCh1SettingBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_green"
+                android:text="Resume to original"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/SaveParamBtn2"
+                android:layout_width="205dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_white"
+                android:baselineAligned="false"
+                android:text="Save Param"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/LoadParamBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_white"
+                android:text="Read Param"
+                android:textAllCaps="false"
+                android:textSize="20sp">
+
+            </Button>
+
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/StdCh2SettingBtn2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/StdCh2Setting"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/RabbitCh1SettingBtn2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RabbitCh1Setting"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/RabbitCh2SettingBtn2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RabbitCh2Setting"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+             <Button
+                    android:id="@+id/BackButton"
+                    android:text="@string/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBackButtonClick" />
+
+                <Button
+                    android:id="@+id/CurrentValueCorrectionBtn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CorrectionSetting" />
+            </LinearLayout>
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+           <Button
+                android:id="@+id/BLESettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BLESetting" />
+
+            <Button
+                android:id="@+id/GraphSettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GraphSetting" />
+        </LinearLayout>
+         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/FilterSettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/FilterSetting" />
+            <Button
+                android:id="@+id/PulseRateSettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PulseRateSetting" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/PulseSettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PulseSetting" />
+            <Button
+                android:id="@+id/FontSettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/FontSetting" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/StdCh1SettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/StdCh1Setting" />
+
+            <Button
+                android:id="@+id/StdCh2SettingBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/StdCh2Setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/LoadParamBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/LoadParam" />
+
+            <Button
+                android:id="@+id/SaveParamBtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SaveParam" />
+        </LinearLayout>
+
+-->
+</LinearLayout>

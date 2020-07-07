@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_ble">
+        <Preference
+            android:key="BackButtonKey"
+            android:widgetLayout="@layout/back_button"
+            />
+
+        <ListPreference
+            android:key="ComKind_key"
+            android:title="@string/h_ComKind"
+            android:summary="@string/h_ComKind"
+            android:dialogTitle="@string/h_ComKind"
+            android:entries="@array/ComKind2"
+            android:defaultValue = "0"
+            android:entryValues="@array/ComKind2_values" />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="auto_gain_check_key"
+            android:title="@string/auto_gain_check" />
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:key="disconnect_time_key3"
+            android:summary="@string/h_disconnect_time"
+            android:title="@string/h_disconnect_time"
+            android:inputType="number"
+            android:maxLength="5"   />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="stop_save_key"
+            android:summary="@string/auto_save2"
+            android:title="@string/auto_save" />
+
+        <ListPreference
+            android:key="BatteryType_key"
+            android:title="@string/BatteryType"
+            android:summary="@string/BatteryType"
+            android:dialogTitle="@string/BatteryType"
+            android:entries="@array/BatteryType"
+            android:defaultValue = "1"
+            android:entryValues="@array/BatteryType_values" />
+
+        <EditTextPreference
+            android:defaultValue="AYA"
+            android:key="device_name_aya_key"
+            android:title="@string/device_name"
+            android:inputType="text"
+            android:maxLength="64"   />
+
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="ble_log_key"
+            android:summary="@string/ble_log_check2"
+            android:title="@string/ble_log_check" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

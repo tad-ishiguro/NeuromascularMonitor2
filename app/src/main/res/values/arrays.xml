@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ComKind2">
+        <item >One sensor</item>
+        <item >Two sensors</item>
+    </string-array>
+    <string-array name="ComKind2_values">
+        <item >0</item>
+        <item >1</item>
+	</string-array>
+
+    <string-array name="MemSwitch">
+        <item >Pulse scale is on the right side.</item>
+        <item >Pulse scale is on the left side.</item>
+    </string-array>
+    <string-array name="MemSwitch_values">
+        <item >0</item>
+        <item >1</item>
+     </string-array>
+
+	<string-array name="CalcGraphAve">
+		<item>Instantaneous value data.</item>
+	    <item>Average value data.</item>
+	</string-array>
+	<string-array name="CalcGraphAve_values">
+		<item>0</item>
+	    <item>1</item>
+	</string-array>
+
+    <string-array name="Pulse_Width">
+        <item >200μsec</item>
+        <item >300μsec</item>
+    </string-array>
+    <string-array name="Pulse_Width_values">
+        <item >200</item>
+        <item >300</item>
+    </string-array>
+
+    <string-array name="Twitch_Interval">
+        <item >1sec</item>
+        <item >10sec</item>
+    </string-array>
+    <string-array name="Twitch_Interval_values">
+        <item >1</item>
+        <item >10</item>
+    </string-array>
+
+    <string-array name="TET_STIM_FREQ">
+        <item >50Hz</item>
+        <item >100Hz</item>
+    </string-array>
+    <string-array name="TET_STIM_FREQ_values">
+        <item >50</item>
+        <item >100</item>
+    </string-array>
+
+    <string-array name="PTC_TET_STIM_FREQ">
+        <item >50Hz</item>
+        <item >100Hz</item>
+    </string-array>
+    <string-array name="PTC_TET_STIM_FREQ_values">
+        <item >50</item>
+        <item >100</item>
+    </string-array>
+
+    <string-array name="DBS_PATTERN">
+        <item >3.3</item>
+        <item >3.2</item>
+        <item >2.3</item>
+    </string-array>
+    <string-array name="DBS_PATTERN_values">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+    </string-array>
+
+    <string-array name="BatteryType">
+        <item>Alkaline batteries</item>
+        <item>Nickel metal hydride battery</item>
+        <item>Eneloop</item>
+    </string-array>
+    <string-array name="BatteryType_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Correction_kind">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="Correction_kind_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+</resources>

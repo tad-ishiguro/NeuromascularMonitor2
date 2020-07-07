@@ -1,0 +1,4 @@
+#Tue Jun 30 17:31:53 JST 2020
+base.0=C\:\\Documents\\AndroidSource\\ANM_source_2_5\\AdtexNeuromascularMonitor\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

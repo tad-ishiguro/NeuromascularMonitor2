@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings">
+        <Preference
+            android:key="BackButtonKey"
+            android:widgetLayout="@layout/back_button"
+            />
+
+        <EditTextPreference
+            android:defaultValue="200"
+            android:key="Heart_Rate_Upper_key"
+            android:summary="@string/Heart_Rate_Upper"
+            android:title="@string/Heart_Rate_Upper"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="5"   />
+
+        <EditTextPreference
+            android:defaultValue="40"
+            android:key="Heart_Rate_Lower_key"
+            android:summary="@string/Heart_Rate_Lower"
+            android:title="@string/Heart_Rate_Lower"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="5"   />
+
+        <EditTextPreference
+            android:defaultValue="40"
+            android:key="Respiratory_Rate_Upper_key"
+            android:summary="@string/Respiratory_Rate_Upper"
+            android:title="@string/Respiratory_Rate_Upper"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="5"   />
+
+        <EditTextPreference
+            android:defaultValue="8"
+            android:key="Respiratory_Rate_Lower_key"
+            android:summary="@string/Respiratory_Rate_Lower"
+            android:title="@string/Respiratory_Rate_Lower"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="5"   />
+
+    </PreferenceCategory>
+</PreferenceScreen>

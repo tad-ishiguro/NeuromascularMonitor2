@@ -1,0 +1,163 @@
+package com.adtex.NeuromusclarMonitor;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Vibrator;
+import android.preference.EditTextPreference;
+import android.preference.ListPreference;
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceScreen;
+import android.text.Editable;
+import android.text.Selection;
+import android.view.View;
+
+
+public class SettingCorrection extends PreferenceActivity {
+    MainActivity	m_ma;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        m_ma = GlobalVariable.m_ma;
+        addPreferencesFromResource(R.layout.setting_correction);
+        DspSummary();
+    }
+
+    public void onBackButtonClick(View v) {
+        ((Vibrator) getSystemService(Context.VIBRATOR_SERVICE)).vibrate(200); /* adtex */
+        finish();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(listener);
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        getPreferenceScreen().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(listener);
+        m_ma.readPreferences();
+    }
+
+    private SharedPreferences.OnSharedPreferenceChangeListener listener = new SharedPreferences.OnSharedPreferenceChangeListener()
+    {
+        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key)
+        {
+            DspSummary();
+        }
+    };
+
+    public void DspSummary()
+    {
+        String	str, str2;
+
+        ListPreference list;
+        EditTextPreference	edittext_preference;
+
+        list = (ListPreference)getPreferenceScreen().findPreference("Correction_kind_key");
+        str = GetCorrectionKind(list.getValue());
+        list.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_receptors_key");
+        str = edittext_preference.getText();// + getString(R.string.TenThousand);
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_0");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_1");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_2");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_3");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_4");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_5");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_6");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_7");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_8");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("ACh_block_rate_key_9");
+        str = edittext_preference.getText() + " %";
+        edittext_preference.setSummary(str);
+
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("blocks_one_stim_key");
+        str = edittext_preference.getText();// + getString(R.string.TenThousand);
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("recovery_half_life_key");
+        str = edittext_preference.getText() + " sec";
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("PTP_key");
+        str = edittext_preference.getText();
+        edittext_preference.setSummary(str);
+
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("PTP_Half_life_key");
+        str = edittext_preference.getText() + " sec";
+        edittext_preference.setSummary(str);
+/*
+        edittext_preference = (EditTextPreference)getPreferenceScreen().findPreference("minimum_sensitivity_key");
+        str = edittext_preference.getText() + " sec";
+        edittext_preference.setSummary(str);
+*/
+    }
+
+    public String GetCorrectionKind(String str1)
+    {
+        String	ret;
+        if(str1.equals("0"))
+            ret = "OFF";
+        else// if(str1.equals("1"))
+            ret = "ON";
+        return ret;
+    }
+
+
+    //カーソルを一番後ろにするための処理
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        super.onPreferenceTreeClick(preferenceScreen, preference);
+
+        String str = preference.getKey();
+        Preference clickedPreference = findPreference (preference.getKey ());
+        if (clickedPreference instanceof EditTextPreference ) // check if EditTextPreference
+        {
+            Editable editable = ((EditTextPreference) clickedPreference).getEditText().getText();
+            Selection.setSelection(editable, editable.length()) ; // set the cursor to last position
+            return true;
+        }
+        return false;
+    }
+
+
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ComKind2">
+        <item >１チャンネル</item>
+        <item >２チャンネル</item>
+    </string-array>
+    <string-array name="ComKind2_values">
+        <item >0</item>
+        <item >1</item>
+	</string-array>
+
+    <string-array name="MemSwitch">
+        <item >脈拍目盛り右側</item>
+        <item >脈拍目盛り左側</item>
+    </string-array>
+    <string-array name="MemSwitch_values">
+        <item >0</item>
+        <item >1</item>
+     </string-array>
+
+	<string-array name="CalcGraphAve">
+		<item>瞬時値のデータでグラフ表示</item>
+	    <item>平均値のデータでグラフ表示</item>
+	</string-array>
+	<string-array name="CalcGraphAve_values">
+		<item>0</item>
+	    <item>1</item>
+	</string-array>
+
+    <string-array name="BatteryType">
+        <item>アルカリ乾電池</item>
+        <item>ニッケル水素乾電池</item>
+        <item>エネループ</item>
+    </string-array>
+    <string-array name="BatteryType_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Correction_kind">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="Correction_kind_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+
+</resources>

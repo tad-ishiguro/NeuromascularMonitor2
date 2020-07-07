@@ -1,0 +1,138 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.adtex.NeuromascularMonitor"
+4    android:versionCode="21"
+5    android:versionName="2.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+8-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:7:5-81
+11-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:7:22-78
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:8:5-68
+12-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:8:22-65
+13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+13-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:9:5-74
+13-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:9:22-71
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:10:5-81
+14-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:10:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:11:5-79
+15-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:11:22-76
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:12:5-66
+16-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:12:22-63
+17
+18    <application
+18-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:14:5-56:19
+19        android:allowBackup="true"
+19-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:15:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\03736cf4bc3669a69d502627b70a527e\core-1.1.0\AndroidManifest.xml:24:18-86
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:16:9-43
+22        android:label="@string/app_name"
+22-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:17:9-41
+23        android:theme="@style/my_theme" >
+23-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:18:9-40
+24        <activity
+24-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:19:9-38:20
+25            android:name="com.adtex.NeuromusclarMonitor.MainActivity"
+25-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:20:13-41
+26            android:configChanges="orientation|keyboardHidden|screenSize"
+26-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:21:13-74
+27            android:label="@string/app_name"
+27-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:22:13-45
+28            android:launchMode="singleTask" >
+28-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:23:13-44
+29            <intent-filter>
+29-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:24:13-28:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:25:17-69
+30-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:25:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:27:17-77
+32-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:27:27-74
+33            </intent-filter>
+34            <intent-filter>
+34-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:29:13-31:29
+35                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+35-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:30:17-90
+35-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:30:25-87
+36            </intent-filter>
+37
+38            <meta-data
+38-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:33:13-35:57
+39                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+39-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:34:17-79
+40                android:resource="@xml/device_filter" />
+40-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:35:17-54
+41        </activity>
+42        <activity android:name="com.adtex.NeuromusclarMonitor.Settings" />
+42-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:39:9-46
+42-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:39:19-43
+43        <activity android:name="com.adtex.NeuromusclarMonitor.Settings2" />
+43-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:40:9-47
+43-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:40:19-44
+44        <activity android:name="com.adtex.NeuromusclarMonitor.SettingBLE" />
+44-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:41:9-48
+44-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:41:19-45
+45        <activity android:name="com.adtex.NeuromusclarMonitor.SettingFilter" />
+45-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:42:9-51
+45-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:42:19-48
+46        <activity android:name="com.adtex.NeuromusclarMonitor.SettingFont" />
+46-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:43:9-49
+46-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:43:19-46
+47        <activity android:name="com.adtex.NeuromusclarMonitor.SettingGraph" />
+47-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:44:9-50
+47-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:44:19-47
+48        <activity android:name="com.adtex.NeuromusclarMonitor.SettingPulse" />
+48-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:45:9-50
+48-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:45:19-47
+49        <activity android:name="com.adtex.NeuromusclarMonitor.SettingPulseRate" />
+49-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:46:9-54
+49-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:46:19-51
+50        <activity android:name="com.adtex.NeuromusclarMonitor.SettingCorrection" />
+50-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:47:9-55
+50-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:47:19-52
+51        <activity
+51-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:48:9-51:59
+52            android:name="com.adtex.NeuromusclarMonitor.DeviceListActivity"
+52-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:49:13-47
+53            android:label="@string/app_name"
+53-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:50:13-45
+54            android:theme="@android:style/Theme.Dialog" />
+54-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:51:13-56
+55
+56        <service
+56-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:53:9-55:38
+57            android:name="com.adtex.NeuromusclarMonitor.UartService"
+57-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:54:13-40
+58            android:enabled="true" />
+58-->C:\Documents\AndroidSource\ANM_source_2_5\AdtexNeuromascularMonitor\app\src\main\AndroidManifest.xml:55:13-35
+59
+60        <activity
+60-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\6a27f052584ba14e1bf3f0754d910342\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+61            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+61-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\6a27f052584ba14e1bf3f0754d910342\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+62            android:exported="false"
+62-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\6a27f052584ba14e1bf3f0754d910342\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\6a27f052584ba14e1bf3f0754d910342\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+64
+65        <meta-data
+65-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\85cfff5691f363e5417071a3d3b6c15f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+66            android:name="com.google.android.gms.version"
+66-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\85cfff5691f363e5417071a3d3b6c15f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+67            android:value="@integer/google_play_services_version" />
+67-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\tad-ishiguro\.gradle\caches\transforms-2\files-2.1\85cfff5691f363e5417071a3d3b6c15f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+68    </application>
+69
+70</manifest>

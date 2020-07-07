@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_pulse">
+        <Preference
+            android:key="BackButtonKey"
+            android:widgetLayout="@layout/back_button"
+            />
+        <EditTextPreference
+            android:defaultValue="15"
+            android:key="Calibration_Start_key"
+            android:summary="@string/Calibration_Start"
+            android:title="@string/Calibration_Start"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="3"
+            android:key="Calibration_Step_key"
+            android:summary="@string/Calibration_Step"
+            android:title="@string/Calibration_Step"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="1000"
+            android:key="Calibration_Interval_key"
+            android:summary="@string/Calibration_Interval"
+            android:title="@string/Calibration_Interval"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="3"
+            android:key="Calibration_Ave_key"
+            android:summary="@string/Calibration_Ave"
+            android:title="@string/Calibration_Ave"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="2"   />
+
+        <EditTextPreference
+            android:defaultValue="50"
+            android:key="Current_Value_key"
+            android:summary="@string/Current_Value"
+            android:title="@string/Current_Value"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="Detection_Threshold_key"
+            android:summary="@string/Detection_Threshold"
+            android:title="@string/Detection_Threshold"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <ListPreference
+            android:key="Pulse_Width_key"
+            android:title="@string/Pulse_Width"
+            android:summary="@string/Pulse_Width"
+            android:dialogTitle="@string/Pulse_Width"
+            android:entries="@array/Pulse_Width"
+            android:defaultValue = "200"
+            android:entryValues="@array/Pulse_Width_values" />
+
+        <ListPreference
+            android:key="Twitch_Interval_key"
+            android:title="@string/Twitch_Interval"
+            android:summary="@string/Twitch_Interval"
+            android:dialogTitle="@string/Twitch_Interval"
+            android:entries="@array/Twitch_Interval"
+            android:defaultValue = "1"
+            android:entryValues="@array/Twitch_Interval_values" />
+
+        <EditTextPreference
+            android:defaultValue="0.5"
+            android:key="TOF_STIM_INTERVAL_key"
+            android:summary="@string/TOF_STIM_INTERVAL"
+            android:title="@string/TOF_STIM_INTERVAL"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="15"
+            android:key="TOF_INTERVAL_key"
+            android:summary="@string/TOF_INTERVAL"
+            android:title="@string/TOF_INTERVAL"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="12"
+            android:key="TOF_TIME_LIMIT_key"
+            android:summary="@string/TOF_TIME_LIMIT"
+            android:title="@string/TOF_TIME_LIMIT"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:key="PTC_Twitch1_NUM_key"
+            android:summary="@string/PTC_Twitch1_NUM"
+            android:title="@string/PTC_Twitch1_NUM"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <ListPreference
+            android:key="PTC_TET_STIM_FREQ_key"
+            android:title="@string/PTC_TET_STIM_FREQ"
+            android:summary="@string/PTC_TET_STIM_FREQ"
+            android:dialogTitle="@string/PTC_TET_STIM_FREQ"
+            android:entries="@array/PTC_TET_STIM_FREQ"
+            android:defaultValue = "50"
+            android:entryValues="@array/PTC_TET_STIM_FREQ_values" />
+
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:key="PTC_TET_STIM_TIME_key"
+            android:summary="@string/PTC_TET_STIM_TIME"
+            android:title="@string/PTC_TET_STIM_TIME"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="PTC_Twitch2_NUM_key"
+            android:summary="@string/PTC_Twitch2_NUM"
+            android:title="@string/PTC_Twitch2_NUM"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="120"
+            android:key="PTC_AUTO_INTERVAL_key"
+            android:summary="@string/PTC_AUTO_INTERVAL"
+            android:title="@string/PTC_AUTO_INTERVAL"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="360"
+            android:key="PTC_TIME_LIMIT_key"
+            android:summary="@string/PTC_TIME_LIMIT"
+            android:title="@string/PTC_TIME_LIMIT"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:key="AUTO_PILOT_PTC_LEVEL_key"
+            android:summary="@string/AUTO_PILOT_PTC_LEVEL"
+            android:title="@string/AUTO_PILOT_PTC_LEVEL"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="20"
+            android:key="DBS_STIM_INTERVAL_key"
+            android:summary="@string/DBS_STIM_INTERVAL"
+            android:title="@string/DBS_STIM_INTERVAL"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="0.75"
+            android:key="DBS_1_2_INTERVAL_key"
+            android:summary="@string/DBS_1_2_INTERVAL"
+            android:title="@string/DBS_1_2_INTERVAL"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="20"
+            android:key="DBS_1_1_INTERVAL_key"
+            android:summary="@string/DBS_1_1_INTERVAL"
+            android:title="@string/DBS_1_1_INTERVAL"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <ListPreference
+            android:key="DBS_PATTERN_key"
+            android:title="@string/DBS_PATTERN"
+            android:summary="@string/DBS_PATTERN"
+            android:dialogTitle="@string/DBS_PATTERN"
+            android:entries="@array/DBS_PATTERN"
+            android:defaultValue = "0"
+            android:entryValues="@array/DBS_PATTERN_values" />
+
+        <EditTextPreference
+            android:defaultValue="20"
+            android:key="DBS_TIME_LIMIT_key"
+            android:summary="@string/DBS_TIME_LIMIT"
+            android:title="@string/DBS_TIME_LIMIT"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+        <ListPreference
+            android:key="TET_STIM_FREQ_key"
+            android:title="@string/TET_STIM_FREQ"
+            android:summary="@string/TET_STIM_FREQ"
+            android:dialogTitle="@string/TET_STIM_FREQ"
+            android:entries="@array/TET_STIM_FREQ"
+            android:defaultValue = "50"
+            android:entryValues="@array/TET_STIM_FREQ_values" />
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:key="TET_STIM_TIME_key"
+            android:summary="@string/TET_STIM_TIME"
+            android:title="@string/TET_STIM_TIME"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="120"
+            android:key="TET_TIME_LIMIT_key"
+            android:summary="@string/TET_TIME_LIMIT"
+            android:title="@string/TET_TIME_LIMIT"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"   />
+
+    </PreferenceCategory>
+</PreferenceScreen>

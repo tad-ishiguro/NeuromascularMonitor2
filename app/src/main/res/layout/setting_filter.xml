@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings">
+        <Preference
+            android:key="BackButtonKey"
+            android:widgetLayout="@layout/back_button"
+            />
+
+        <EditTextPreference
+            android:defaultValue="15"
+            android:key="hi_pass_freq_key"
+            android:summary="@string/hi_pass_freq"
+            android:title="@string/hi_pass_freq"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="0.6"
+            android:key="band_pass_freq_key1"
+            android:summary="@string/band_pass_freq1"
+            android:title="@string/band_pass_freq1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="2"
+            android:key="band_pass_freq_key2"
+            android:summary="@string/band_pass_freq2"
+            android:title="@string/band_pass_freq2"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="0.01"
+            android:key="low_band_pass_freq_key1"
+            android:summary="@string/low_band_pass_freq1"
+            android:title="@string/low_band_pass_freq1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:defaultValue="0.4"
+            android:key="low_band_pass_freq_key2"
+            android:summary="@string/low_band_pass_freq2"
+            android:title="@string/low_band_pass_freq2"
+            android:inputType="numberDecimal"
+            android:digits="0123456789-."
+            android:maxLength="6"   />
+
+    </PreferenceCategory>
+</PreferenceScreen>

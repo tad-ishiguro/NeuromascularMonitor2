@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings">
+        <Preference
+            android:key="BackButtonKey"
+            android:widgetLayout="@layout/back_button"
+            />
+        <EditTextPreference
+            android:defaultValue="30"
+            android:key="text_font_size_key2"
+            android:summary="@string/text_font_size"
+            android:title="@string/text_font_size"
+            android:inputType="number"
+            android:maxLength="2"   />
+
+        <EditTextPreference
+            android:defaultValue="30"
+            android:key="mem_font_size_key2"
+            android:summary="@string/mem_font_size"
+            android:title="@string/mem_font_size"
+            android:inputType="number"
+            android:maxLength="2"   />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

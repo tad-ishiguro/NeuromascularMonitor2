@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_correction">
+        <Preference
+            android:key="BackButtonKey"
+            android:widgetLayout="@layout/back_button"
+            />
+
+        <ListPreference
+            android:key="Correction_kind_key"
+            android:title="@string/Correction_kind"
+            android:summary="@string/Correction_kind"
+            android:dialogTitle="@string/Correction_kind"
+            android:entries="@array/Correction_kind"
+            android:defaultValue = "OFF"
+            android:entryValues="@array/Correction_kind_values" />
+
+        <EditTextPreference
+            android:key="ACh_receptors_key"
+            android:summary="@string/ACh_receptors"
+            android:title="@string/ACh_receptors"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key"
+            android:summary="@string/ACh_block_rate"
+            android:title="@string/ACh_block_rate"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_0"
+            android:summary="@string/ACh_block_rate_5m"
+            android:title="@string/ACh_block_rate_5m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_1"
+            android:summary="@string/ACh_block_rate_10m"
+            android:title="@string/ACh_block_rate_10m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_2"
+            android:summary="@string/ACh_block_rate_15m"
+            android:title="@string/ACh_block_rate_15m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_3"
+            android:summary="@string/ACh_block_rate_20m"
+            android:title="@string/ACh_block_rate_20m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_4"
+            android:summary="@string/ACh_block_rate_25m"
+            android:title="@string/ACh_block_rate_25m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_5"
+            android:summary="@string/ACh_block_rate_30m"
+            android:title="@string/ACh_block_rate_30m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_6"
+            android:summary="@string/ACh_block_rate_35m"
+            android:title="@string/ACh_block_rate_35m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_7"
+            android:summary="@string/ACh_block_rate_40m"
+            android:title="@string/ACh_block_rate_40m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_8"
+            android:summary="@string/ACh_block_rate_45m"
+            android:title="@string/ACh_block_rate_45m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="ACh_block_rate_key_9"
+            android:summary="@string/ACh_block_rate_50m"
+            android:title="@string/ACh_block_rate_50m"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="blocks_one_stim_key"
+            android:summary="@string/blocks_one_stim"
+            android:title="@string/blocks_one_stim"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="recovery_half_life_key"
+            android:summary="@string/recovery_half_life"
+            android:title="@string/recovery_half_life"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="PTP_key"
+            android:summary="@string/PTP"
+            android:title="@string/PTP"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <EditTextPreference
+            android:key="PTP_Half_life_key"
+            android:summary="@string/PTP_Half_life"
+            android:title="@string/PTP_Half_life"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:maxLength="6"   />
+
+        <CheckBoxPreference
+            android:defaultValue="0"
+            android:key="correction_log_key"
+            android:title="@string/correction_log_check" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

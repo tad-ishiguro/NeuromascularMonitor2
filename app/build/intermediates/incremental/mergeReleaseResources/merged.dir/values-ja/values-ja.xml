@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="BatteryType">
+        <item>アルカリ乾電池</item>
+        <item>ニッケル水素乾電池</item>
+        <item>エネループ</item>
+    </string-array>
+    <string-array name="BatteryType_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="CalcGraphAve">
+		<item>瞬時値のデータでグラフ表示</item>
+	    <item>平均値のデータでグラフ表示</item>
+	</string-array>
+    <string-array name="CalcGraphAve_values">
+		<item>0</item>
+	    <item>1</item>
+	</string-array>
+    <string-array name="ComKind2">
+        <item>１チャンネル</item>
+        <item>２チャンネル</item>
+    </string-array>
+    <string-array name="ComKind2_values">
+        <item>0</item>
+        <item>1</item>
+	</string-array>
+    <string-array name="Correction_kind">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="Correction_kind_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="MemSwitch">
+        <item>脈拍目盛り右側</item>
+        <item>脈拍目盛り左側</item>
+    </string-array>
+    <string-array name="MemSwitch_values">
+        <item>0</item>
+        <item>1</item>
+     </string-array>
+    <string name="ACh_block_rate">筋弛緩深度 初期値(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_10m">筋弛緩深度 10分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_15m">筋弛緩深度 15分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_20m">筋弛緩深度 20分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_25m">筋弛緩深度 25分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_30m">筋弛緩深度 30分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_35m">筋弛緩深度 35分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_40m">筋弛緩深度 40分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_45m">筋弛緩深度 45分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_50m">筋弛緩深度 50分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_block_rate_5m">筋弛緩深度 5分後(ACh 受容体ブロック率 0-100%)</string>
+    <string name="ACh_receptors">ACh 受容体数の初期値(万)</string>
+    <string name="AUTO_PILOT_PTC_LEVEL">Pulse STOPAuto Pilotで PTCからTOFに戻るためのPTC閾値</string>
+    <string name="BLESetting">測定設定...</string>
+    <string name="BatteryType">電池の種類</string>
+    <string name="BreathingWave">呼吸波形</string>
+    <string name="CONECTING_DEVICE">デバイスとの通信を接続しています。通信が確立した後、再度操作してください。</string>
+    <string name="Calibration_Ave">キャリブレーション　パルス強度移動平均数</string>
+    <string name="Calibration_Interval">キャリブレーションパルス出力間隔(msec)</string>
+    <string name="Calibration_Start">キャリブレーション　スタート電流値 (mA)</string>
+    <string name="Calibration_Step">キャリブレーション　ステップ電流値 (mA)</string>
+    <string name="Can_not_save_in_measurement">測定中は保存できません。</string>
+    <string name="Cannot_DEAL">指定されたファイルは読み込むことができません。</string>
+    <string name="Cannot_Entory_Marker">これ以上マーカーは登録できません。</string>
+    <string name="Cannot_Open_In_Measure">測定中はファイルを開くことはできません。\r\nSTOPで停止してから開いてください。</string>
+    <string name="Cannot_START_IN_DBS">DBS 信号発信中は測定を開始できません。[Pulse STOP] をタップしてください。</string>
+    <string name="Cannot_START_IN_TET">TET 信号発信中は測定を開始できません。[Pulse STOP] をタップしてください。</string>
+    <string name="CorrectionSetting">人口指への筋収縮信号設定...</string>
+    <string name="Correction_Setting_ON">筋収縮信号設定がONの場合はこの機能は使えません。</string>
+    <string name="Correction_kind">筋弛緩シミュレーションモード</string>
+    <string name="Current_Value">電流値(mA)</string>
+    <string name="Current_Value2">電流値</string>
+    <string name="DBS_1_1_INTERVAL">DBS 1-1 間隔(sec)</string>
+    <string name="DBS_1_2_INTERVAL">DBS 1-2 間隔(sec)</string>
+    <string name="DBS_LIMIT">DBSパルスは連続して出力できません。%.0f sec お待ちください。</string>
+    <string name="DBS_PATTERN">DBS バーストパターン</string>
+    <string name="DBS_STIM_INTERVAL">DBS 刺激間隔(msec)</string>
+    <string name="DBS_TIME_LIMIT">DBS制限時間(sec)</string>
+    <string name="DelayTime">時間差</string>
+    <string name="Detection_Threshold">検出閾値（最大上神経刺激時の筋収縮信号量比)(%)</string>
+    <string name="DripRate">点滴数</string>
+    <string name="DripSetButton">点滴測定</string>
+    <string name="DripWave">点滴波形</string>
+    <string name="FileNameTag">保存パラメータファイル名</string>
+    <string name="FilterSetting">フィルター設定...</string>
+    <string name="FontSetting">フォント設定...</string>
+    <string name="GraphSetting">グラフ設定...</string>
+    <string name="Hart_Amp_Mag">心拍波　縦軸　倍率</string>
+    <string name="HeartRate">心拍数</string>
+    <string name="HeartWave">心拍波形</string>
+    <string name="Heart_Rate_Lower">心拍数の下限</string>
+    <string name="Heart_Rate_Upper">心拍数の上限</string>
+    <string name="HumanSetButton">筋弛緩測定(人)</string>
+    <string name="Input_Comment">コメントを入力してください。</string>
+    <string name="LoadParam">パラメータ読み込み</string>
+    <string name="MuscleWave">筋弛緩波形</string>
+    <string name="NotParamFile">選択されたファイルはパラメータファイルではありません。</string>
+    <string name="P06SS_NOT_CONNECT">P06SSが接続されていません。</string>
+    <string name="P06SS_NOT_CONNECT2">マルチセンサー測定が指定されていますが、P06SSは一つしか接続されていません。</string>
+    <string name="PTC_AUTO_INTERVAL">PTC 自動繰り返し時間(sec)</string>
+    <string name="PTC_LIMIT">PTCパルスは連続して出力できません。%.0f sec お待ちください。</string>
+    <string name="PTC_TET_STIM_FREQ">PTC TET 刺激周波数(Hz)</string>
+    <string name="PTC_TET_STIM_TIME">PTC TET 刺激時間(sec)</string>
+    <string name="PTC_TIME_LIMIT">PTC制限時間(sec)</string>
+    <string name="PTC_Twitch1_NUM">PTC Twitch1 刺激回数</string>
+    <string name="PTC_Twitch2_NUM">PTC Twitch2 刺激回数</string>
+    <string name="PTC_check">PTCグラフを表示</string>
+    <string name="PTP">1回の神経刺激による増加量(PTP)</string>
+    <string name="PTP_Half_life">ACh 増加量(PTP)の半減期 t1 / 2(sec)</string>
+    <string name="ParamFileReadSuccess">パラメータを読み込みました。</string>
+    <string name="ParamFileSaveError">パラメータの保存でエラーが生じました。</string>
+    <string name="ParamFileSaveSuccess">パラメータを保存しました。</string>
+    <string name="PulseRateSetting">心拍数、呼吸数設定...</string>
+    <string name="PulseSetting">パルス設定...</string>
+    <string name="PulseWave">パルス波形</string>
+    <string name="Pulse_Width">パルス幅(μsec)</string>
+    <string name="RabbitCh1SettigParam1">パラメータを１チャンネルうさぎ測定に設定します。よろしいですか？</string>
+    <string name="RabbitCh1SettigParam2">パラメータを１チャンネルうさぎ測定に設定しました。</string>
+    <string name="RabbitCh1Setting">1chうさぎ測定</string>
+    <string name="RabbitCh2SettigParam1">パラメータを２チャンネルうさぎ測定に設定します。よろしいですか？</string>
+    <string name="RabbitCh2SettigParam2">パラメータを２チャンネルうさぎ測定に設定しました。</string>
+    <string name="RabbitCh2Setting">2chうさぎ測定</string>
+    <string name="RabbitSetButton">筋弛緩測定(うさぎ)</string>
+    <string name="RawWave">生波形</string>
+    <string name="RespiratoryRate">呼吸数</string>
+    <string name="Respiratory_Amp_Mag">呼吸波　縦軸　倍率</string>
+    <string name="Respiratory_Rate_Lower">呼吸数の下限</string>
+    <string name="Respiratory_Rate_Upper">呼吸数の上限</string>
+    <string name="RestoreSetParam">パラメータを一つ前の設定に戻しました。</string>
+    <string name="SaveParam">パラメータ保存</string>
+    <string name="SetDripParam">パラメータを液滴測定用に設定しました。</string>
+    <string name="SetHumanParam">パラメータを筋弛緩測定(人)用に設定しました。</string>
+    <string name="SetRabbitParam">パラメータを筋弛緩測定(うさぎ)用に設定しました。</string>
+    <string name="StartADMeas">左上の[START]ボタンをタップして測定を開始してください。</string>
+    <string name="StdCh1SettigParam1">パラメータを初期設定に戻します。よろしいですか？</string>
+    <string name="StdCh1SettigParam2">パラメータを初期設定に戻しました。</string>
+    <string name="StdCh1Setting">1ch標準測定</string>
+    <string name="StdCh2SettigParam1">パラメータを２チャンネル標準測定に設定しましす。よろしいですか？</string>
+    <string name="StdCh2SettigParam2">パラメータを２チャンネル標準測定に設定しました。</string>
+    <string name="StdCh2Setting">2ch標準測定</string>
+    <string name="StopADMeas">この機能は測定中は使えません。\n左上の[STOP]ボタンをタップして測定を停止してください。</string>
+    <string name="T1_check">T1絶対値グラフを表示</string>
+    <string name="T1_ratio_check">T1コントロール値比グラフを表示</string>
+    <string name="T4_check">T4/T1グラフを表示</string>
+    <string name="TET_LIMIT">TETパルスは連続して出力できません。%.0f sec お待ちください。</string>
+    <string name="TET_STIM_FREQ">TET 刺激周波数(Hz)</string>
+    <string name="TET_STIM_TIME">TET 刺激時間(sec)</string>
+    <string name="TET_TIME_LIMIT">TET 制限時間(sec)</string>
+    <string name="TOF1_Amp_Mag">筋弛緩波形　縦軸　倍率</string>
+    <string name="TOF2_Amp_Mag">パルス波形Ch2　縦軸　倍率</string>
+    <string name="TOF_INTERVAL">TOFインターバル(sec)</string>
+    <string name="TOF_LIMIT">TOFパルスは連続して出力できません。%.0f sec お待ちください。</string>
+    <string name="TOF_STIM_INTERVAL">TOF刺激間隔(sec)</string>
+    <string name="TOF_TIME_LIMIT">TOF制限時間(sec)</string>
+    <string name="TOF_check">TOFグラフを表示</string>
+    <string name="Tap_Start_Button">[CHECK]ボタンをタップして測定を開始してください。</string>
+    <string name="TenThousand">(万)</string>
+    <string name="There_is_no_data">データがありません。</string>
+    <string name="Twitch_Interval">Twitch間隔(sec)</string>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"ホームに戻る"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"前に戻る"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"その他のオプション"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"完了"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"すべて表示"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"アプリの選択"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"OFF"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ON"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"Space"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"検索…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"検索キーワードを削除"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"検索キーワード"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"検索"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"検索キーワードを送信"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"音声検索"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"共有"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>と共有"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"折りたたむ"</string>
+    <string name="absolute_time_flg">グラフ横軸絶対時刻表示</string>
+    <string name="action_settings">設定</string>
+    <string name="alert_NotConnect">Cannot start USB Serial.\nPlease connect USB Serial device.</string>
+    <string name="alert_cancel">Cancel</string>
+    <string name="alert_end">Are you sure to terminate ?</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_terminate">Terminate</string>
+    <string name="app_name">ADTEX Neuromuscular Monitor Ver.2.5</string>
+    <string name="auto_gain_check">オートゲインコントロール</string>
+    <string name="auto_save">[STOP]で自動保存</string>
+    <string name="auto_save2">[STOP]タップで自動保存します。</string>
+    <string name="back">　戻る　</string>
+    <string name="band_pass_freq1">心拍波形用バンドパスフィルターの遮断周波数1</string>
+    <string name="band_pass_freq2">心拍波形用バンドパスフィルターの遮断周波数2</string>
+    <string name="battery_level">電池残量</string>
+    <string name="battery_select0">アルカリ乾電池</string>
+    <string name="battery_select1">ニッケル水素電池</string>
+    <string name="battery_select2">エネループ</string>
+    <string name="battery_voltage">電池電圧</string>
+    <string name="ble_log_check">BLEの通信ログを記録</string>
+    <string name="ble_log_check2">BLEの通信ログを記録します。</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+    <string name="blocks_one_stim">一回の神経刺激によるＡCh 受容体ブロック数(万)</string>
+    <string name="bluetooth_error">BLEの使用許可がありません。</string>
+    <string name="btn_font_size">ボタンのフォントサイズを指定します。(5～99)</string>
+    <string name="btn_ok">OK</string>
+    <string name="calc_graph_ave_select0">瞬時値で値とグラフを表示</string>
+    <string name="calc_graph_ave_select1">平均値で値とグラフを表示</string>
+    <string name="calc_message">計算中</string>
+    <string name="calc_title">計算処理</string>
+    <string name="cancel">キャンセル</string>
+    <string name="cannot_input_comment">コメントは測定時のみ入力できます。</string>
+    <string name="certify_err">AYAP5との認証に失敗しました。</string>
+    <string name="certify_ok">AYAP5との認証に成功しました。</string>
+    <string name="certify_timeout_err">AYAP5との認証でタイムアウトエラーが発生しました。</string>
+    <string name="ch1_raw_graph_check">チャンネル１生波形を表示</string>
+    <string name="ch2_raw_graph_check">チャンネル２生波形を表示</string>
+    <string name="com_kind_select0">１チャンネル</string>
+    <string name="com_kind_select1">２チャンネル</string>
+    <string name="comment">コメント</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"有効にする"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行には、Google Play開発者サービスの有効化が必要です。"</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play開発者サービスの有効化"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"インストール"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いの端末にはインストールされていません。"</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play開発者サービスの入手"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play 開発者サービスの利用"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play開発者サービスのエラー"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。"</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いの端末ではサポートされていません。"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスの更新が必要です。"</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play開発者サービスの更新"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。"</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"スマートフォンで開く"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"ログイン"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleにログイン"</string>
+    <string name="connect">connect</string>
+    <string name="connected">Connected</string>
+    <string name="correction_log_check">筋収縮信号量計算ログを記録する</string>
+    <string name="ctrl_value">Control値</string>
+    <string name="current_setting">電流設定</string>
+    <string name="device">Device:</string>
+    <string name="device_name">接続するBLEのデバイス名</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Not connected</string>
+    <string name="do_not_detect_check">点滴チェッカー時、振幅が閾値より小さい場合は点滴を検出しない</string>
+    <string name="do_not_detect_threshold">点滴チェッカー時、点滴を検出しない振幅の閾値</string>
+    <string name="drip_band_pass_freq1">点滴波形用バンドパスフィルター遮断周波数1</string>
+    <string name="drip_band_pass_freq2">点滴波形用バンドパスフィルター遮断周波数2</string>
+    <string name="dsp_drop_wave">点滴チェッカー点滴波形表示</string>
+    <string name="dsp_raw_wave">点滴チェッカー生波形表示</string>
+    <string name="end">終了</string>
+    <string name="entry">　　登録　　</string>
+    <string name="file_open_btn">ﾌｧｲﾙ開く</string>
+    <string name="file_save_btn">保存</string>
+    <string name="file_version_err">ファイルは古い形式です。アプリのVer.1.9以下のバージョンで処理してください。</string>
+    <string name="gain1_down">Ch1 Gain-</string>
+    <string name="gain1_up">Ch1 Gain+</string>
+    <string name="gain2_down">Ch2 Gain-</string>
+    <string name="gain2_up">Ch2 Gain+</string>
+    <string name="gain_down">Gain-</string>
+    <string name="gain_up">Gain+</string>
+    <string name="h_BaudRate">ボーレート</string>
+    <string name="h_BaudRate2">現在のボーレート</string>
+    <string name="h_CalcGraphAve">平均値or瞬時値</string>
+    <string name="h_ComKind">センサーの数</string>
+    <string name="h_ComKind2">現在の設定</string>
+    <string name="h_DataBit">データビット</string>
+    <string name="h_DataBit2">現在のデータビット</string>
+    <string name="h_FlowControl">フロー制御</string>
+    <string name="h_FlowControl2">現在のフロー制御</string>
+    <string name="h_MemSwitch">縦軸目盛りの変更</string>
+    <string name="h_MemSwitch2">現在の設定</string>
+    <string name="h_MemSwitchLeft">脈拍目盛り左側</string>
+    <string name="h_MemSwitchRight">脈拍目盛り右側</string>
+    <string name="h_ParityBit">パリティ</string>
+    <string name="h_ParityBit2">現在のパリティ</string>
+    <string name="h_StopBit">ストップビット</string>
+    <string name="h_StopBit2">現在のストップビット</string>
+    <string name="h_average_time">平均値算出データ数</string>
+    <string name="h_disconnect_time">測定終了後BLE接続を切断するまでの時間(min.)</string>
+    <string name="h_mem_font_size2">現在のフォントサイズ</string>
+    <string name="hardcopy">hard copy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hi_pass_freq">筋弛緩波形用ハイパスフィルターの遮断周波数</string>
+    <string name="hr_check">心拍数グラフを表示</string>
+    <string name="iasWrite">ImmediateAlert</string>
+    <string name="input_marker">　　　マーカー入力　　　</string>
+    <string name="intravenous_drip_check">点滴チェッカー</string>
+    <string name="is_end">終了させますか？</string>
+    <string name="llsWrite">LinkLossAlert</string>
+    <string name="low_band_pass_freq1">呼吸波用バンドパスフィルターの遮断周波数1</string>
+    <string name="low_band_pass_freq2">呼吸波用バンドパスフィルターの遮断周波数2</string>
+    <string name="mem_font_size">目盛りのフォントサイズを指定します。(5～99)</string>
+    <string name="menu_reconnect">再接続</string>
+    <string name="minimum_sensitivity">最小感度(%)</string>
+    <string name="neuromuscular_depth">筋弛緩深度</string>
+    <string name="no_ble_devices">No LE devices found.</string>
+    <string name="no_device">&lt;Select a device></string>
+    <string name="pair">pair</string>
+    <string name="paired">paired</string>
+    <string name="param_err">数値が正しく入力されていません。</string>
+    <string name="patient_btn">患者番号</string>
+    <string name="patient_id_error">Patient ID が正しくありません。</string>
+    <string name="pause"> pause on </string>
+    <string name="permission_internet">FTPでデータをアップロードするためインターネットへのアクセスが必要です。許可してください。</string>
+    <string name="permission_location">BLE機器と接続するためには位置情報へのアクセスが必要です。許可してください。</string>
+    <string name="permission_phone">機種の固有情報を取得するために電話機能にアクセスします。電話機能へのアクセスを許可してください。</string>
+    <string name="permission_storage">データを保存、読み出すためにファイルへのアクセスを許可してください。</string>
+    <string name="pwv_check">PWVグラフを表示</string>
+    <string name="read_message">データを読み込み中</string>
+    <string name="read_title">データの読み込み</string>
+    <string name="ready">Ready</string>
+    <string name="recalc_btn">再計算</string>
+    <string name="recovery_half_life">ACh 受容体回復量の半減期 t1 / 2(sec)</string>
+    <string name="rr_check">呼吸数グラフを表示</string>
+    <string name="save_btn">保存</string>
+    <string name="save_message1">データを保存中</string>
+    <string name="save_message2">計算データを保存中</string>
+    <string name="save_title">データの保存</string>
+    <string name="scan">Scan</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string msgid="730395136688082741" name="search_menu_title">"検索"</string>
+    <string name="select_device">Select a device</string>
+    <string name="senser_distance">センサー間の距離</string>
+    <string name="setting_ble">BLE 設定</string>
+    <string name="setting_btn">設定</string>
+    <string name="setting_correction">筋弛緩シミュレーションモード</string>
+    <string name="setting_filter">フィルター設定</string>
+    <string name="setting_font">フォント設定</string>
+    <string name="setting_graph">グラフ設定</string>
+    <string name="setting_pulse">パルス設定</string>
+    <string name="setting_pulserate">心拍数設定</string>
+    <string name="settings">設定</string>
+    <string name="status">Status</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="text_font_size">結果表示のフォントサイズを指定します。(5～99)</string>
+    <string name="timelag_check">時間差グラフを表示</string>
+    <string name="times">回</string>
+    <string name="times2">回以上</string>
+    <string name="unpair">unpair</string>
+</resources>
